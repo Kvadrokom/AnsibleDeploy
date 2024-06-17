@@ -1,0 +1,19 @@
+- name: deploy reminder 
+  hosts: test_host
+  gather_facts: False
+  #  become: true
+
+  tasks:
+
+    - name: deploy
+      copy:
+        src: /home/rem/reminder.py
+        dest: /home/greenbec/
+        mode: 0644 
+
+    - name: deploy
+      copy:
+        src: /home/rem/reminder_utils.py
+        dest: /home/greenbec/
+        mode: 0644
+
