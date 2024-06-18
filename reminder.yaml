@@ -7,13 +7,13 @@
 
     - name: deploy
       copy:
-        src: /home/rem/reminder.py
+        src: ~/ansible/reminder.py
         dest: /home/greenbec/
         mode: 0644 
 
     - name: deploy
       copy:
-        src: /home/rem/reminder_utils.py
+        src: ~/ansible/reminder_utils.py
         dest: /home/greenbec/
         mode: 0644
 
